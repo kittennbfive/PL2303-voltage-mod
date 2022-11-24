@@ -1,0 +1,349 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R1_2
+U 1 1 630D0345
+P 1350 1400
+F 0 "R1_2" H 1420 1446 50  0000 L CNN
+F 1 "6,8k" H 1420 1355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1280 1400 50  0001 C CNN
+F 3 "~" H 1350 1400 50  0001 C CNN
+	1    1350 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 630D07D5
+P 1350 1700
+F 0 "R2" H 1420 1746 50  0000 L CNN
+F 1 "1,6k" H 1420 1655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1280 1700 50  0001 C CNN
+F 3 "~" H 1350 1700 50  0001 C CNN
+	1    1350 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 630D0C1D
+P 1350 2000
+F 0 "R3" H 1420 2046 50  0000 L CNN
+F 1 "1k" H 1420 1955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1280 2000 50  0001 C CNN
+F 3 "~" H 1350 2000 50  0001 C CNN
+	1    1350 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4_1
+U 1 1 630D0FD1
+P 1200 2150
+F 0 "R4_1" V 1100 1900 50  0000 C CNN
+F 1 "200" V 1200 1900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1130 2150 50  0001 C CNN
+F 3 "~" H 1200 2150 50  0001 C CNN
+	1    1200 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 630D1384
+P 1350 2600
+F 0 "R5" H 1420 2646 50  0000 L CNN
+F 1 "3,6k" H 1420 2555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1280 2600 50  0001 C CNN
+F 3 "~" H 1350 2600 50  0001 C CNN
+	1    1350 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM358 U1
+U 1 1 630D1AE7
+P 2850 1900
+F 0 "U1" H 2850 2267 50  0000 C CNN
+F 1 "LM358" H 2850 2176 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 2850 1900 50  0001 C CNN
+F 3 "" H 2850 1900 50  0001 C CNN
+	1    2850 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM358 U1
+U 2 1 630D31DA
+P 2850 2800
+F 0 "U1" H 2850 3167 50  0000 C CNN
+F 1 "LM358" H 2850 3076 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 2850 2800 50  0001 C CNN
+F 3 "" H 2850 2800 50  0001 C CNN
+	2    2850 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM358 U1
+U 3 1 630D4C73
+P 2600 1150
+F 0 "U1" H 2558 1196 50  0000 L CNN
+F 1 "LM358" H 2558 1105 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 2600 1150 50  0001 C CNN
+F 3 "" H 2600 1150 50  0001 C CNN
+	3    2600 1150
+	1    0    0    -1  
+$EndComp
+Connection ~ 1350 1550
+$Comp
+L power:+5V #PWR03
+U 1 1 630E0109
+P 1350 1250
+F 0 "#PWR03" H 1350 1100 50  0001 C CNN
+F 1 "+5V" H 1365 1423 50  0000 C CNN
+F 2 "" H 1350 1250 50  0001 C CNN
+F 3 "" H 1350 1250 50  0001 C CNN
+	1    1350 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 630E0874
+P 1350 2750
+F 0 "#PWR04" H 1350 2500 50  0001 C CNN
+F 1 "GND" H 1355 2577 50  0000 C CNN
+F 2 "" H 1350 2750 50  0001 C CNN
+F 3 "" H 1350 2750 50  0001 C CNN
+	1    1350 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 1900 3150 2150
+Wire Wire Line
+	3150 2150 2550 2150
+Wire Wire Line
+	2550 2150 2550 2000
+$Comp
+L Device:R R1_1
+U 1 1 630E7A73
+P 1100 1400
+F 0 "R1_1" H 850 1450 50  0000 L CNN
+F 1 "6,8k" H 850 1350 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1030 1400 50  0001 C CNN
+F 3 "~" H 1100 1400 50  0001 C CNN
+	1    1100 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4_2
+U 1 1 630E7F33
+P 1200 2450
+F 0 "R4_2" V 1150 2200 50  0000 C CNN
+F 1 "200" V 1250 2200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1130 2450 50  0001 C CNN
+F 3 "~" H 1200 2450 50  0001 C CNN
+	1    1200 2450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1050 2150 1050 2450
+Wire Wire Line
+	1100 1550 1350 1550
+Wire Wire Line
+	1100 1250 1350 1250
+Connection ~ 1350 1250
+Wire Wire Line
+	2550 2900 2550 3050
+Wire Wire Line
+	2550 3050 3150 3050
+Wire Wire Line
+	3150 3050 3150 2800
+$Comp
+L power:GND #PWR09
+U 1 1 630EBF78
+P 2550 2700
+F 0 "#PWR09" H 2550 2450 50  0001 C CNN
+F 1 "GND" V 2555 2572 50  0000 R CNN
+F 2 "" H 2550 2700 50  0001 C CNN
+F 3 "" H 2550 2700 50  0001 C CNN
+	1    2550 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 630EF4D8
+P 2500 1450
+F 0 "#PWR08" H 2500 1200 50  0001 C CNN
+F 1 "GND" H 2505 1277 50  0000 C CNN
+F 2 "" H 2500 1450 50  0001 C CNN
+F 3 "" H 2500 1450 50  0001 C CNN
+	1    2500 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR07
+U 1 1 630EF98E
+P 2500 850
+F 0 "#PWR07" H 2500 700 50  0001 C CNN
+F 1 "+5V" H 2515 1023 50  0000 C CNN
+F 2 "" H 2500 850 50  0001 C CNN
+F 3 "" H 2500 850 50  0001 C CNN
+	1    2500 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J1
+U 1 1 630F5B60
+P 950 3350
+F 0 "J1" H 868 3767 50  0000 C CNN
+F 1 "USB_UART" H 868 3676 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Horizontal" H 950 3350 50  0001 C CNN
+F 3 "~" H 950 3350 50  0001 C CNN
+	1    950  3350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J3
+U 1 1 630F6798
+P 2150 3450
+F 0 "J3" H 2230 3492 50  0000 L CNN
+F 1 "UART_IN_OUT" H 2230 3401 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 2150 3450 50  0001 C CNN
+F 3 "~" H 2150 3450 50  0001 C CNN
+	1    2150 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 630F6FFE
+P 1950 3550
+F 0 "#PWR05" H 1950 3300 50  0001 C CNN
+F 1 "GND" H 1955 3377 50  0000 C CNN
+F 2 "" H 1950 3550 50  0001 C CNN
+F 3 "" H 1950 3550 50  0001 C CNN
+	1    1950 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 630F77E1
+P 1150 3550
+F 0 "#PWR01" H 1150 3300 50  0001 C CNN
+F 1 "GND" V 1155 3422 50  0000 R CNN
+F 2 "" H 1150 3550 50  0001 C CNN
+F 3 "" H 1150 3550 50  0001 C CNN
+	1    1150 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 630FEB68
+P 2300 2150
+F 0 "C1" H 2400 2150 50  0000 L CNN
+F 1 "100n" H 2350 2050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2338 2000 50  0001 C CNN
+F 3 "~" H 2300 2150 50  0001 C CNN
+	1    2300 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 630FF080
+P 2300 2300
+F 0 "#PWR06" H 2300 2050 50  0001 C CNN
+F 1 "GND" H 2305 2127 50  0000 C CNN
+F 2 "" H 2300 2300 50  0001 C CNN
+F 3 "" H 2300 2300 50  0001 C CNN
+	1    2300 2300
+	1    0    0    -1  
+$EndComp
+Text Label 3150 1900 0    50   ~ 0
+V_out
+$Comp
+L power:+5V #PWR02
+U 1 1 630F8488
+P 1150 3250
+F 0 "#PWR02" H 1150 3100 50  0001 C CNN
+F 1 "+5V" V 1165 3378 50  0000 L CNN
+F 2 "" H 1150 3250 50  0001 C CNN
+F 3 "" H 1150 3250 50  0001 C CNN
+	1    1150 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1150 3350 1950 3350
+Text Label 1150 3150 0    50   ~ 0
+V_out
+Connection ~ 2300 1800
+Wire Wire Line
+	2550 1800 2300 1800
+Wire Wire Line
+	1800 1700 1700 1700
+Wire Wire Line
+	1700 1700 1700 1550
+Wire Wire Line
+	1700 1550 1350 1550
+Wire Wire Line
+	1800 1900 1700 1900
+Wire Wire Line
+	1700 1900 1700 2150
+Wire Wire Line
+	1700 2150 1350 2150
+Connection ~ 1350 2150
+Wire Wire Line
+	1800 2000 1800 2450
+Wire Wire Line
+	1800 2450 1350 2450
+Connection ~ 1350 2450
+Wire Wire Line
+	1800 1800 1600 1800
+Wire Wire Line
+	1600 1800 1600 1850
+Wire Wire Line
+	1600 1850 1350 1850
+Connection ~ 1350 1850
+Wire Wire Line
+	1950 3450 1150 3450
+Text Notes 1100 2000 0    50   ~ 0
+3,3V\n2,5V\n2,0V\n1,8V
+Text Notes 1600 3350 0    50   ~ 0
+TXD
+Text Notes 1600 3550 0    50   ~ 0
+RXD
+$Comp
+L Connector_Generic:Conn_02x04_Odd_Even J2
+U 1 1 637FC986
+P 2000 1800
+F 0 "J2" H 2050 2117 50  0000 C CNN
+F 1 "Vout_select" H 2050 2026 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 2000 1800 50  0001 C CNN
+F 3 "~" H 2000 1800 50  0001 C CNN
+	1    2000 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 1900 2300 2000
+Connection ~ 2300 2000
+Wire Wire Line
+	2300 1700 2300 1800
+Wire Wire Line
+	2300 1800 2300 1900
+Connection ~ 2300 1900
+Text Notes 850  3700 1    50   ~ 0
+to MODIFIED\nUSB-UART-module
+Text Notes 2350 3350 0    50   ~ 0
+to device
+Text Notes 550  850  0    50   ~ 0
+Caution: The LM358 is NOT rail to rail,\nso a 5V option will not work!\n\nAll resistors and C1 0805 (or THT if you want)
+Text Notes 7000 6950 0    79   ~ 0
+PL2303-voltage-mod\n(c) 2022 by kittennbfive - https://github.com/kittennbfive/\nCC BY-SA 4.0
+Text Notes 600  1150 0    50   ~ 0
+NO WARRANTY!
+$EndSCHEMATC
